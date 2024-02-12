@@ -4,10 +4,9 @@ function separateInteger(number) {
     var i = 0;
     var stock = [];
     while (i < number.length) {
-        stock[i] = Math.floor(number[i] / 10);
+        stock[i * 2] = Math.floor(number[i] / 10);
         console.log(stock[i]);
-        stock[1 + 2 * i] = (number[i] % 10);
-        console.log(stock[i]);
+        stock[i * 2 + 1] = (number[i] % 10);
         i += 1;
     }
     return stock;

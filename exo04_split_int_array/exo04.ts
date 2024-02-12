@@ -6,23 +6,15 @@ function separateInteger(number: number[]) {
   let stock: number[] = [];
 
   while (i < number.length) {
+    stock[i * 2] = Math.floor(number[i] / 10);
 
-    stock[i] = Math.floor(number[i] / 10);
-    console.log(stock[i]);
-
-    stock[i] = (number[i]%10);
-    console.log(stock[i])
+    stock[i * 2 + 1] = number[i] % 10;
 
     i += 1;
-
   }
 
-return stock;
-
+  return stock;
 }
-
-
-
 
 let number: number[] = [99, 15, 76, 10, 52];
 
