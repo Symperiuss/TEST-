@@ -1,12 +1,12 @@
 //prendre une string et la réecrire dans un tableau 
 // Exemple : tb1 = ["apagnan"]  tb2 = ["apagnan"]
 
-function duplicateString(number: string[]) {
+function duplicateString(string: string[]) {
   let i: number = 0;
   let stock: string[] = [];
 
-  while (i < number.length) {
-    stock[i] = number[i];
+  while (i < string.length) {
+    stock[i] = string[i];
 
 
     i += 1;
@@ -15,6 +15,6 @@ function duplicateString(number: string[]) {
   return stock;
 }
 
-let number: string[] = ["apagnan"];
+let string: string[] = ["apagnan"];
 
-console.log(duplicateString(number));
+console.log(duplicateString(string));
