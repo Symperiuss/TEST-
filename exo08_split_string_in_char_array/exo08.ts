@@ -1,5 +1,5 @@
 //prendre une string et la réecrire dans un tableau
-// Exemple : tb1 = ["apagnan"]  tb2 = ['a', 'p', 'a', 'g', 'n', 'a', 'n']
+// Exemple : tb1 = "apagnan"  tb2 = ['a', 'p', 'a', 'g', 'n', 'a', 'n']
 
 function reverseString(string: string) {
   let i: number = 0;
